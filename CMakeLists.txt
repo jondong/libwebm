@@ -25,6 +25,8 @@ if (ENABLE_TESTS OR ENABLE_WEBMTS OR ENABLE_WEBMINFO OR ENABLE_WEBM_PARSER)
   require_cxx_flag_nomsvc("-std=c++11")
 endif ()
 
+require_cxx_flag_nomsvc("-fPIC")
+
 add_cxx_preproc_definition("__STDC_CONSTANT_MACROS")
 add_cxx_preproc_definition("__STDC_FORMAT_MACROS")
 add_cxx_preproc_definition("__STDC_LIMIT_MACROS")
